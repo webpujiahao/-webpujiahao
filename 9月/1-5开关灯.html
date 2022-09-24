@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开关灯</title>
+    <style>
+        img {
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="kai">开</button>
+        <button id="guan">关</button>
+
+        <img src="./images/eg_bulbon.gif" alt="" id="tu2">
+        <img src="./images/eg_bulboff.gif" alt="" id="tu1">
+    </div>
+    <script>
+        document.getElementById('kai').onclick = function () {
+        document.getElementById('tu2').style.display='block'
+        document.getElementById('tu1').style.display='none'
+    }
+        document.getElementById('guan').onclick = function () {
+        document.getElementById('tu2').style.display='none'
+        document.getElementById('tu1').style.display='block'
+    }
+    </script>
+</body>
+
+</html>

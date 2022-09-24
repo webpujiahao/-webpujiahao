@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>你好！</title>
+	</head>
+	<!-- 
+	  属性操作：操作标签的属性：1. 获取对象
+	  2. 读操作：读取变量的值
+	  3. 写操作：修改变量的值
+	 
+	 思路：
+	 1. 通过input的value属性获取到用户输入的值
+	 2. 创建变量，把值存在变量中
+	 3. 创建事件
+	 
+	 -->
+	<body>
+		<input type="text" placeholder="请输入大名" value='' id="input1">
+		<input type="button" value="弹" id="input2">
+		
+		
+		<script type="text/javascript">
+			var oInput = document.getElementById('input1') //获取到input元素对象 存储到变量中
+			var oBtn = document.getElementById('input2') //获取到input元素对象 存储到变量中
+			oBtn.onclick = function(){ //单击oBtn时，执行一段程序
+				alert("Hello" + oInput.value + "你好！") //
+				oInput.value = ''
+			}
+			
+		</script>
+	</body>
+</html>

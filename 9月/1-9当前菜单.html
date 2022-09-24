@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>当前菜单</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		nav {
+			width: 500px;
+			height: 40px;
+			line-height: 40px;
+			margin: 50px auto 0 auto;
+			display: flex;
+			border: 1px solid #ccc;
+		}
+
+		nav a {
+			/* background-color: aqua; */
+			/* flex-grow: 设置弹性项目的扩展比例 */
+			flex-grow: 1;
+			text-align: center;
+		}
+
+		.active {
+			background-color: aqua;
+			color:#333;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<a href="#" class="active">首页</a>
+		<a href="#">新闻</a>
+		<a href="#">产品</a>
+		<a href="#">服务</a>
+		<a href="#">联系我们</a>
+	</nav>
+
+	<script>
+		//目标：点击a标签：①给a标签添加背景色②清除掉上一个的背景色
+
+		//1.获取元素
+		var aA = document.querySelectorAll('nav a')
+		//4.定义变量存储上一个
+		var last = aA[0]//上一个
+		//2.为aA添加点击事件
+		for (var i = 0; i < aA.length; i++) {
+			aA[i].onclick = function () {
+				//5. 清除上一个的背景色
+				last.className = ''
+				//3. ①给a标签添加背景色
+				this.className = 'active'
+				//6. 为当前a标签添加背景色之后，那么当前a标签就成为了下一次点击的上一个元素对象
+				last = this
+			}
+		}
+
+	</script>
+</body>
+
+</html>
