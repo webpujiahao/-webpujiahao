@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>微博</title>
+		<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #f4f4f4;
+		}
+		.container{
+			width:600px;
+			margin:0 auto;
+			/* border:1px solid red; */
+			/* background-color: ; */
+		}
+		.weibo_pannel{
+			background-color: #fff;
+			padding:20px;
+		}
+		.weibo_pannel  textarea{
+			width:100%;
+			height:100px;
+			border-radius: 8px;
+			border:1px solid orangered;
+			outline:none;
+		}
+		.submit{
+			text-align: right;
+		}
+		.submit input{
+			background-color: #FF4500;
+			color:#fff;
+			border-radius: 20px;
+			width:70px;
+			height:30px;
+			line-height: 30px;;
+			text-align: center;
+			border:none;
+			font-weight: bold;
+		}
+		.msg{
+			height:150px;
+			background-color: #fff;
+			margin: 20px 0 0 0;
+		}	
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="weibo_pannel">
+					<textarea rows="" cols="" id="txt"></textarea>
+					<div class="submit"><input type="submit" id="btn"></div>
+			</div>
+			<div class="messages"  id="msgs">
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			var oText = document.getElementById('txt')
+			var oBtn = document.getElementById('btn')
+			var oMsgs = document.getElementById('msgs')
+			//var aaa  = ''
+
+			oBtn.onclick = function () {
+				
+				oMsgs.innerHTML =  "<div class='msg'>" + oText.value  + "</div>" +oMsgs.innerHTML
+				 //div.innerHTML div元素的内容 = 
+			}
+			
+		</script>
+	</body>
+</html>

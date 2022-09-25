@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>坚果微信聊天</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3633401_sx31dk3sgx.css">
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        .box1 {
+            width: 398px;
+            height: 892px;
+            background-color: #ccc;
+            border-radius: 40px 40px 40px 40px;
+            padding: 4px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .box2 {
+            width: 396px;
+            height: 888px;
+            padding: 1px;
+            background-color: #000;
+            border-radius: inherit;
+            box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .box3 {
+            width: 384px;
+            height: 876px;
+            padding: 6px;
+            background-color: #888;
+            border: 1px solid #eee;
+            border-radius: inherit;
+        }
+
+        .box4 {
+            width: 384px;
+            height: 876px;
+            background-color: #e4e4e4;
+            border-radius: inherit;
+            box-shadow: 0 0 4px 3px rgba(0, 0, 0, 1);
+            overflow: hidden;
+        }
+        .view{
+            width:100%;
+            height:876px;
+            background-color:#333;
+        }
+        .lan1{
+            width:80px;
+            height:40px;
+            line-height: 40px;
+            /* background-color: red; */
+        }
+        .lan1 span{
+            margin-right:5px;
+        }
+        .header{
+            /* background-color: gold; */
+            padding:10px 20px;
+            display: flex;
+            justify-content: space-between;
+            /* align-content: center; */
+            align-items: center;
+        }
+        .camera{
+            width:18px;
+            height:10px;
+            background-color: #111;
+            border-radius: 50%;
+            padding:4px 0;
+        }
+        .ball{
+            width:10px;
+            height:10px;
+            margin:0 auto;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        .dot{
+            width:8px;
+            height:8px;
+            border-radius: 50%;
+            background-image: radial-gradient(blue,black);
+        }
+        .lan3 span{
+            font-size:16px;
+        }
+        .lan1 .icon-xinhao{
+            position: relative;
+        }
+        .lan1 .icon-xinhao::after{
+            content:'4G';
+            font-size:8px;
+            position:absolute;
+            left:-5px;
+            top:-18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .key{
+            width:4px;
+            height:100px;
+            background-color: #ccc;
+            position: absolute;
+            right:-4px;
+            top:100px;
+            border-radius:0  4px 4px 0;
+        }
+        .key1{
+            
+        }
+        .key2{
+            height:50px;
+            top:250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3">
+                <div class="box4">
+                    <div class="header">
+                        <div class="lan1">
+                            <span class="iconfont icon-xinhao"></span>
+                            <span class="iconfont icon-xinhao"></span>
+                            <span class="wifi iconfont icon-wifi"></span>
+                        </div>
+                        <div class="camera">
+                            <div class="ball">
+                                
+                                <div class="dot"></div>
+                                
+                            </div>
+                        </div>
+                        <div class="lan3">
+                            <span class="iconfont icon-electricity-full"> 08:08</span>
+                        </div>
+                    </div>
+
+                    <div class="view">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="key key1"></div>
+        <div class="key key2"></div>
+    </div>
+</body>
+
+</html>
